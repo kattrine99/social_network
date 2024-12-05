@@ -1,10 +1,10 @@
 import { Header} from "./components/UI/Header/Header";
 import {LoginPage, MainPage, ProfilePage, RegistrationPage } from '@/pages'
-import {BrowserRouter as Router, Route, Routes } from "react-router";
+import {BrowserRouter, Route, Routes } from "react-router";
 
 export default function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <Header />
         <div className="container">
@@ -16,7 +16,7 @@ export default function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

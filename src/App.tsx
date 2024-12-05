@@ -10,9 +10,9 @@ export default function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<MainPage />}>
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/registration" element={< RegistrationPage />} />
-            <Route path="/profile" element={< ProfilePage />} />
+            <Route path="login" element={<LoginPage />} />
+            <Route path="registration" element={< RegistrationPage />} />
+            <Route path="profile" element={< ProfilePage />} />
             </Route>
           </Routes>
         </div>

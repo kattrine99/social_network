@@ -3,11 +3,11 @@ import { LoginPage } from "./pages/LoginPage/LoginPage";
 import { MainPage } from "./pages/MainPage/MainPage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
 import { RegistrationPage } from './pages/RegistrationPage/RegistrationPage';
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter as Router, Route, Routes } from "react-router";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Header />
         <div className="container">
@@ -19,7 +19,7 @@ export default function App() {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

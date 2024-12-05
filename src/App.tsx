@@ -1,5 +1,5 @@
 import { Header} from "./components/UI/Header/Header";
-import {LoginPage,MainPage,ProfilePage,RegistrationPage } from '@/pages'
+import {LoginPage, MainPage, ProfilePage, RegistrationPage } from '@/pages/index'
 import { BrowserRouter as Router, Route, Routes } from "react-router";
 
 export default function App() {

@@ -1,4 +1,3 @@
-import { Outlet } from "react-router";
 import "./MainPage.scss";
 
 export const MainPage = () => {
@@ -720,7 +719,6 @@ export const MainPage = () => {
           </div>
         </div>
       </aside>
-      <Outlet/>
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import { Outlet } from "react-router";
 import "./ProfilePage.scss";
 
 export const ProfilePage = () => {
@@ -832,7 +831,6 @@ export const ProfilePage = () => {
           </div>
         </div>
       </aside>
-      <Outlet/>
     </div>
   );
 };

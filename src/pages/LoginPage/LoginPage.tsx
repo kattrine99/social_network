@@ -6,6 +6,7 @@ import { Applink } from "../../components";
 import { Heading } from "../../components/Typography";
 
 export const LoginPage = () => {
+  
   return (
     <div className="LoginPage">
       <Heading text="Авторизация" level={1} className={""} />

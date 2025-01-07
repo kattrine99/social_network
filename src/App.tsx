@@ -3,7 +3,8 @@ import { LoginPage } from "./pages/LoginPage/LoginPage";
 
 function App() {
   return (
-    <>
+    <div className="App">
+       <>
       <div className="App">
         <Header />
         <div className="container">
@@ -11,7 +12,12 @@ function App() {
         </div>
       </div>
     </>
+      
+    </div>
   );
 }
 
 export default App;
+
+
+

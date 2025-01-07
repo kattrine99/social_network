@@ -1,10 +1,12 @@
+import { Navbar } from "../../components/NavBar/NavBar";
 import "./MainPage.scss";
 
 export const MainPage = () => {
   return (
     <div className="MainPage">
       <aside className="LeftSide">
-        <nav className="Navbar">
+        <Navbar/>
+        {/* <nav className="Navbar">
           <ul className="navbar__list">
             <li className="navbar__item">
               <svg
@@ -161,7 +163,7 @@ export const MainPage = () => {
               <span className="Badge">100</span>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         <div className="List">
           <div className="List__title">
             <h2>Подписки</h2>

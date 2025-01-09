@@ -1,10 +1,11 @@
 interface ButtonPage {
   text: string
+  type ?: "button" | "submit" | "reset"
 }
 
-export const Button = ({ text }: ButtonPage) => {
+export const Button = ({ text, type}: ButtonPage) => {
   return (
-    <button>{text}</button>
+    <button type={type}>{text}</button>
   )
 }
 

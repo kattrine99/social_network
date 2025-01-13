@@ -13,6 +13,8 @@
   }
 
   input {
+    position: relative;
+    padding-right: 40px;
     display: block;
     width: 100%;
     margin-bottom: 20px;
@@ -27,7 +29,17 @@
       border-color: var(--prime-color);
     }
   }
-
+    .toggle-password {
+      width: 100px;
+      right: 0px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color:#222;
+  }
   button {
     width: 100%;
     margin-bottom: 30px;

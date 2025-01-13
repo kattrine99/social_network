@@ -7,7 +7,6 @@ import * as yup from "yup"
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useNavigate } from "react-router-dom";
-
 interface IRegisterForm {
     userfirstname: string
     userlastname: string
@@ -42,6 +41,7 @@ export const RegistrationPage = () => {
     useremail: "",
     usertel: "",
     userpassword: "", }, })
+
   const onSubmit: SubmitHandler<IRegisterForm> = () => {
     navigate("/login")
 }
@@ -75,14 +75,23 @@ export const RegistrationPage = () => {
           />
         )} />
         <Controller name="userpassword" control={control} render={({field}) => (
-          <Input isError={errors.userpassword ? true : false} errorMessage={errors.userpassword?.message} type="password" placeholder="Пароль"
-            {...field}
-          />
+          <><Input 
+          isError={errors.userpassword ? true : false}
+          errorMessage={errors.userpassword?.message}
+          placeholder="Пароль"
+          {...field}
+        />
+            </>
         )} />
         <Controller name="repeatpassword" control={control} render={({ field }) => (
-            <Input isError={errors.repeatpassword ? true : false} errorMessage={errors.repeatpassword?.message} type="password" placeholder="Повторите пароль"
-            {...field}
-            />
+            <>
+            <Input
+                isError={errors.repeatpassword ? true : false}
+                errorMessage={errors.repeatpassword?.message}
+                placeholder="Повторите пароль"
+                {...field}
+              />
+                      </>
         )}/>
 
         <Button text="Зарегистрироваться" type="submit" />

@@ -4,7 +4,7 @@ export const AuthWith = () => {
   return (
     <div className="registration">
       <span>
-        У вас нет аккаунта? <Applink href="#" text="Зарегистрироваться" className={""} />
+        У вас нет аккаунта? <Applink to="/register" text="Зарегистрироваться" className={""} />
       </span>
       <p>Войти с помощью</p>
       <div className="icons-wrapper">

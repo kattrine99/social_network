@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom"
 interface ApplinkProps {
-    href: string
+    to: string
     text: string
     className: string
 }
-export const Applink = ({ href, text, className }: ApplinkProps) => {
+export const Applink = ({ to, text, className }: ApplinkProps) => {
     return (
-        <a className={className} href={href}>{text}</a>
+        <Link to={to} className={className}>
+      {text}
+    </Link>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./styles/base.scss"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { LoginPage, MainPage, ProfilePage } from "./pages";
+import { LoginPage, MainPage, ProfilePage, RegistrationPage } from "./pages";
 import App from './App';
 
 const routerConfig = createBrowserRouter([
@@ -21,6 +21,10 @@ const routerConfig = createBrowserRouter([
     path: "/profile",
     element: <ProfilePage />,
   },
+  {
+    path: "/register",
+    element: <RegistrationPage/>
+  }
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
